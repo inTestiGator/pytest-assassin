@@ -2,7 +2,7 @@
   A General Description of what the plugin is and what it allows users to do
 
 # Features
-    Include a description of the features and what the plugin can do.
+  Include a description of the features and what the plugin can do.
 
 # Requirements
   Include what prerequisites the user will need such as the versions of pytest
