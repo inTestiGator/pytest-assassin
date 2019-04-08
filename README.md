@@ -1,7 +1,8 @@
 # Pytest-Assassin
   <img src="images/assassinpic.jpg"
        alt="Picture"
-       width="300" height="300" />
+       width="500" height="300" />
+
   A General Description of what the plugin is and what it allows users to do
 
 # Features
