@@ -3,7 +3,7 @@
        alt="Picture"
        width="500" height="300" />
 
-  A General Description of what the plugin is and what it allows users to do
+  General Description of what the plugin is and what it allows users to do
 
 # Features
   Include a description of the features and what the plugin can do.
