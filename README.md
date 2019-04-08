@@ -1,5 +1,8 @@
 # Pytest-Assassin
-  ![](Images/assassin.png)
+  <img src="images/assassinpic.jpg"
+       alt="Picture"
+       width="500" height="300" />
+
   A General Description of what the plugin is and what it allows users to do
 
 # Features
