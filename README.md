@@ -1,4 +1,5 @@
 # Pytest-Assassin
+  ![](Images/assassin.png)
   A General Description of what the plugin is and what it allows users to do
 
 # Features
