@@ -2,7 +2,8 @@
 
   ![picture](images/assassinpic.jpg)
 
-  [![Build Status](https://travis-ci.org/{ORG-or-USERNAME}/{REPO-NAME}.png?branch=master)](https://travis-ci.org/{ORG-or-USERNAME}/{REPO-NAME})
+  [![Build Status](https://api.travis-ci.com/inTestiGator/pytest-assassin.svg?branch=master)](https://travis-ci.com/inTestiGator/pytest-assassin)
+  [![codecov.io](http://codecov.io/github/inTestiGator/pytest-assassin/coverage.svg?branch=master)](http://codecov.io/github/inTestiGator/pytest-assassin?branch=master)
 
 
   Pytest-Assassin is a plugin for pytest that allows users to have the ability
