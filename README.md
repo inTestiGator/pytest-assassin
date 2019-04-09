@@ -1,8 +1,6 @@
 # Pytest-Assassin
 
-  <img src="images/assassinpic.jpg"
-       alt="Picture"
-       width="500" height="300" />
+  ![picture](images/assassinpic.jpg)
 
   Pytest-Assassin is a plugin for pytest that allows users to have the ability
   to check and see if their test cases contain assert statements or not. This
