@@ -2,6 +2,9 @@
 
   ![picture](images/assassinpic.jpg)
 
+  [![Build Status](https://travis-ci.org/{ORG-or-USERNAME}/{REPO-NAME}.png?branch=master)](https://travis-ci.org/{ORG-or-USERNAME}/{REPO-NAME})
+
+
   Pytest-Assassin is a plugin for pytest that allows users to have the ability
   to check and see if their test cases contain assert statements or not. This
   will help with the problem of useless test cases that are not doing anything
