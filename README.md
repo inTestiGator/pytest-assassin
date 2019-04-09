@@ -9,7 +9,8 @@
 
 ## Features
 
-  Include a description of the features and what the plugin can do.
+  This plugin will take iterate through your code's test cases and return
+  if any of the cases do not contain an assertion statement.
 
 ## Requirements
 
