@@ -1,4 +1,4 @@
-"""Test to check for assertion"""
+"""Test to check for asss"""
 
 # print every line of code
 # print to prove
@@ -9,7 +9,7 @@ nodes = [item for item in ast.parse(testerFile.read()).body if isinstance(item, 
 for node in nodes:
     items = [item for item in ast.parse(node).body]
     for item in items:
-        print(items)
+        
         if isinstance(item, ast.Assign):
             print("Ignore")
         elif isinstance(item, ast.Assert):
