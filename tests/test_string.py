@@ -1,4 +1,4 @@
-"""Test to print out every line of Python code"""
+"""Test to check for assertion"""
 
 # print every line of code
 # print to prove
