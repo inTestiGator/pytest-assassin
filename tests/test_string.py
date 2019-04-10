@@ -2,16 +2,17 @@
 
 # print every line of code
 # print to prove
+import ast
 
-if data.file("test_"):
-    file = open("test_")
-    for line in file
-    print line
-file.close()
-
-
-
-f = open("test_")
-lines = f.readlines()
-for line in lines:
-    print line
+testerFile = open("new.py", "r")
+nodes = [item for item in ast.parse(testerFile.read()).body if isinstance(item, ast.FunctionDef)]
+for node in nodes:
+    items = [item for item in ast.parse(node).body]
+    for item in items:
+        print(items)
+        if isinstance(item, ast.Assign):
+            print("Ignore")
+        elif isinstance(item, ast.Assert):
+            print("Pass")
+        else:
+            print("Fail")
