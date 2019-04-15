@@ -7,15 +7,18 @@ import sys
 MYPATH = os.path.dirname(os.path.asbath(__file__))
 sys.path.insert(0, MYPATH + "/../")
 
+
 def pytest_addoption(parser):
     """ Turns features on with "--assassin" option"""
     group = parser.getgroup('assassin')
     group.addoption("--assassin")
 
+
 def pytest_report_header():
     """ Thank tester for running tests """
     if pytest.config.getoption('assassin'):
         return "Thanks for running tests"
+
 
 def pytest_report_teststatus(report):
     """ Turn failures into opportunities """

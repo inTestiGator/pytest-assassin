@@ -12,5 +12,5 @@ setup(
     license='Pytest-Assasin Copyright ',
     py_modules=['pytest_assassin'],
     install_requires=['pytest'],
-    entry_points={'pytest11': ['assassin = pytest_assassin',],},
+    entry_points={'pytest11': ['assassin = pytest_assassin', ], },
 )
