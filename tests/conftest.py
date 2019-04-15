@@ -12,6 +12,7 @@ sys.path.insert(0, MYPATH + "/../")
 
 def pytest_addoption(parser):
     """ Turns features on with "--assassin" option"""
+    # pylint: disable=inconsistent-return-statements
     group = parser.getgroup("assassin")
     group.addoption("--assassin")
 
