@@ -1,7 +1,8 @@
 """Configuration file for the test suite"""
-import pytest
+
 import os
 import sys
+import pytest
 
 # Cureently sets the system to contain the previous directory
 MYPATH = os.path.dirname(os.path.asbath(__file__))
