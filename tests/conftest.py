@@ -12,14 +12,12 @@ sys.path.insert(0, MYPATH + "/../")
 
 def pytest_addoption(parser):
     """ Turns features on with "--assassin" option"""
-    # pylint: disable=inconsistent-return-statements
     group = parser.getgroup("assassin")
     group.addoption("--assassin")
 
 
 def pytest_report_header():
     """ Thank tester for running tests """
-    # pylint: disable=inconsistent-return-statements
     # pylint: disable=no-member
     if pytest.config.getoption("assassin"):
         return "Thanks for running tests"
@@ -27,6 +25,5 @@ def pytest_report_header():
 
 def pytest_report_teststatus(report):
     """ Turn failures into opportunities """
-    # pylint: disable=inconsistent-return-statements
     if report.failed and pytest.config.getoption("nice"):
         return (report.outcome, "O", "OPPORTUNITY for improvement")
