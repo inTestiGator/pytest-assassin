@@ -11,17 +11,17 @@ sys.path.insert(0, MYPATH + "/../")
 
 def pytest_addoption(parser):
     """ Turns features on with "--assassin" option"""
-    group = parser.getgroup('assassin')
+    group = parser.getgroup("assassin")
     group.addoption("--assassin")
 
 
 def pytest_report_header():
     """ Thank tester for running tests """
-    if pytest.config.getoption('assassin'):
+    if pytest.config.getoption("assassin"):
         return "Thanks for running tests"
 
 
 def pytest_report_teststatus(report):
     """ Turn failures into opportunities """
-    if report.failed and pytest.config.getoption('nice'):
-        return (report.outcome, 'O', 'OPPORTUNITY for improvement')
+    if report.failed and pytest.config.getoption("nice"):
+        return (report.outcome, "O", "OPPORTUNITY for improvement")
