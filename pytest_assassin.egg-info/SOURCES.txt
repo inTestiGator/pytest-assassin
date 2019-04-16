@@ -1,0 +1,9 @@
+README.md
+pytest_assassin.py
+setup.py
+pytest_assassin.egg-info/PKG-INFO
+pytest_assassin.egg-info/SOURCES.txt
+pytest_assassin.egg-info/dependency_links.txt
+pytest_assassin.egg-info/entry_points.txt
+pytest_assassin.egg-info/requires.txt
+pytest_assassin.egg-info/top_level.txt

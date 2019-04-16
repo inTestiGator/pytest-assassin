@@ -5,7 +5,7 @@
 
 import ast
 
-testerFile = open("new.py", "r")
+testerFile = open("tests/test_new.py", "r")
 nodes = [
     item
     for item in ast.parse(testerFile.read()).body

@@ -55,5 +55,4 @@ def tester_test():
 
 # pylint: disable=pointless-statement
 # pylint: disable=undefined-variable
-x + 10
-
+#x + 10
