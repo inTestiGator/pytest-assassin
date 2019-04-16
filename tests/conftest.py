@@ -20,10 +20,10 @@ def pytest_report_header():
     """ Thank tester for running tests """
     # pylint: disable=no-member
     if pytest.config.getoption("assassin"):
-        return "Thanks for running tests"
+        print "Thanks for running tests"
 
 
 def pytest_report_teststatus(report):
     """ Turn failures into opportunities """
     if report.failed and pytest.config.getoption("nice"):
-        return (report.outcome, "O", "OPPORTUNITY for improvement")
+        print (report.outcome, "O", "OPPORTUNITY for improvement")
