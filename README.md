@@ -12,8 +12,15 @@
 
 ## Features
 
-  This plugin will take iterate through your code's test cases and return
-  if any of the cases do not contain an assertion statement.
+  Welcome to Pytest-Assassin! Here at Pytest-Assassin, we want to destroy the
+  code that is wrong for your program. Our key features are checking for asserts
+  and function calls within your test cases. While this seems like something
+  to pass up, we can assure you that this is exactly what you want. We are
+  sure that mostly everyone has written a test case that either assert nothing
+  or makes sure that a container, if you will, is filled. While the latter
+  is not bad, it is not what a program needs! A program needs test cases that will
+  run through the function, take the expected output and compare it to the actual
+  output. So in other words, a program needs Pytest Assassin! 
 
 ## Requirements
 

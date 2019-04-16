@@ -1,7 +1,8 @@
-"""Test to check for assertion"""
+"""Test to check for assert"""
 
 # print every line of code
 # print to prove
+
 import ast
 
 testerFile = open("new.py", "r")
@@ -13,7 +14,6 @@ nodes = [
 for node in nodes:
     items = [item for item in ast.parse(node).body]
     for item in items:
-        print(items)
         if isinstance(item, ast.Assign):
             print("Ignore")
         elif isinstance(item, ast.Assert):
