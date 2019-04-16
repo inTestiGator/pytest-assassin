@@ -37,3 +37,23 @@ def test_read_file_populates_data_1():
     word_list = storage_manager.words()
     assert word_list is not None
     assert len(word_list) == 1
+
+"This is the example test file"
+
+
+def test_nick_sucks():
+    "this method creates the string to test"
+    # pylint: disable=redefined-builtin
+    str = "Hello"
+    assert str
+
+
+def tester_test():
+    "This is the tester"
+    return 10
+
+
+# pylint: disable=pointless-statement
+# pylint: disable=undefined-variable
+x + 10
+
