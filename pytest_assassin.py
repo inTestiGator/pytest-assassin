@@ -27,7 +27,7 @@ def pytest_report_teststatus(report):
 
 
 def execution():
-
+	""" undocumented """
     testerFile = open("tests/test_new.py", "r")
     nodes = [
         item
