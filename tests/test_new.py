@@ -21,7 +21,7 @@ def test_words():
 
 
 def test_stop_words():
-    """This will be testing the word frequency manager"""
+    """ Tests the word frequency manager"""
     stop_manage = compute_tf_objectoriented.WordFrequencyManager()
 
     assert stop_manage is not None
@@ -42,7 +42,7 @@ def test_read_file_populates_data_1():
 
 
 def test_nick_sucks():
-    "method that creates the string to be tested on"
+    """ Method that creates the string to be tested on """
     # pylint: disable=redefined-builtin
     str = "Hello"
     assert str
