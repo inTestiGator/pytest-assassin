@@ -1,7 +1,9 @@
+"This class allows the pytest to run in the terminal"
+
 import os
 import sys
-import pytest
 import ast
+import pytest
 
 assert os  # silence pyflakes
 assert sys  # silence pyflakes
