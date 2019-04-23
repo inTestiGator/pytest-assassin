@@ -4,6 +4,9 @@
 # print to prove
 
 import ast
+import os
+
+os.walk
 
 testerFile = open("new.py", "r")
 nodes = [
