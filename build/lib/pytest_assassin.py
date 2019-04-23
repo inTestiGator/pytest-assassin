@@ -27,7 +27,7 @@ def pytest_report_teststatus(report):
 
 
 def execution():
-	""" tests for assertions and displays output based on findings """
+	""" tests for assertions """
     testerFile = open("tests/test_new.py", "r")
     nodes = [
         item
