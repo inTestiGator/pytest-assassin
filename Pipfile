@@ -14,11 +14,8 @@ pytest-xdist = "*"
 py = "*"
 black = "*"
 pytest-cov = "*"
-
 [packages]
-
 [requires]
 python_version = "3.6"
-
 [pipenv]
 allow_prereleases = true
