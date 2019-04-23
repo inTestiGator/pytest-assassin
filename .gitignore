@@ -1,3 +1,5 @@
+# Ignore these files
+
 # Ignore folder named `build`
 build/
 
