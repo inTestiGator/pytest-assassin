@@ -2,7 +2,6 @@
 
 import os
 import sys
-import pytest
 
 # Cureently sets the system to contain the previous directory
 # pylint: disable=no-member

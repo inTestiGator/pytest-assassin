@@ -20,7 +20,7 @@
   or makes sure that a container, if you will, is filled. While the latter
   is not bad, it is not what a program needs! A program needs test cases that will
   run through the function, take the expected output and compare it to the actual
-  output. So in other words, a program needs Pytest Assassin! 
+  output. So in other words, a program needs Pytest Assassin!
 
 ## Requirements
 
@@ -31,9 +31,13 @@
 
   Include how to install the plugin in this section
 
-## Usage
+## Commands
 
-  Include the commands needed to run the plugin
+Listed below are the commands needed to run the program.
+
+- Create the shell environment using: `pipenv shell`
+- Install the setup file using: `python3 setup.py install`
+- Run the plugin with the command: `pytest --assassin`
 
 ## Example Output
 

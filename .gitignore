@@ -1,0 +1,8 @@
+# Ignore folder named `build`
+build/
+
+# Ignore folder named `dist`
+dist/
+
+# Ignore folder named `pytest_assasin.egg-info`
+pytest_assassin.egg-info
