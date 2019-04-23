@@ -11,17 +11,11 @@ codecov = "*"
 flake8 = "*"
 pytest-sugar = "*"
 pytest-xdist = "*"
-pathlib = "*"
 py = "*"
-pygithub = "*"
-gitpython = "*"
 black = "*"
 pytest-cov = "*"
-
 [packages]
-
 [requires]
 python_version = "3.6"
-
 [pipenv]
 allow_prereleases = true
