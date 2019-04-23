@@ -24,6 +24,7 @@ def pytest_report_header():
 
 def pytest_report_teststatus(report):
     """ Turn failures into opportunities """
+    # pylint: disable=no-member
     if report.failed and pytest.config.getoption("assassin"):
         print(report.outcome, "O", "OPPORTUNITY for improvement")
     else:
