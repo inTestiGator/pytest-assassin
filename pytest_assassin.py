@@ -11,7 +11,7 @@ def pytest_addoption(parser):
 
 
 def pytest_report_header():
-    """ Thank tester for running tests """
+    """ Thanks tester for running tests """
     # pylint: disable=no-member
     if pytest.config.getoption("assassin"):
         execution()
@@ -19,7 +19,7 @@ def pytest_report_header():
 
 
 def pytest_report_teststatus(report):
-    """ Turn failures into opportunities """
+    """ Turns failures into opportunities """
     if report.failed and pytest.config.getoption("assassin"):
         print (report.outcome, "O", "OPPORTUNITY for improvement")
     else:
