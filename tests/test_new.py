@@ -11,8 +11,3 @@ def test_the_file():
 def tester_test():
     "This is the tester"
     return 10
-
-
-# pylint: disable=pointless-statement
-# pylint: disable=undefined-variable
-# x + 10
