@@ -18,20 +18,19 @@ def pytest_report_header():
         execution()
 
 
+# def walk():
+#     directory = os.listdir("./")
+#     for object in directory:
+#         if object == "tests":
+#             walk = os.walk("tests")
+#             print("hi")
+#         elif object == "testing":
+#             os.walk("testing")
+#         else:
+#             print("Not a test folder")
 
 def execution():
-    #testerFile = open("tests/test_new.py", "r")
-    directory = os.listdir("./")
-    for object in directory:
-        if object == "tests":
-            walk = os.walk("tests")
-            print("hi")
-        elif object == "testing":
-            os.walk("testing")
-        else:
-            print("Not a test folder")
-
-def check_assert():
+    testerFile = open("tests/test_new.py", "r")
     nodes = [
         item
         for item in ast.parse(testerFile.read()).body
@@ -41,7 +40,9 @@ def check_assert():
         items = [item for item in ast.parse(node).body]
         for item in items:
             if isinstance(item, ast.Assign):
-                print("Ignore")
+                pass
+            elif isinstance(item, ast.Expr):
+                pass
             elif isinstance(item, ast.Assert):
                 print("Pass")
             else:
@@ -71,5 +72,6 @@ def pytest_collection_modifyitems(items):
                 else:
                     print("Fail")
             if var == False:
+                print(itemt.name)
                 nick.append(itemt.name)
                 items.remove(item)
