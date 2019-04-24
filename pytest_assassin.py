@@ -48,6 +48,7 @@ def check_assert():
                 print("Fail")
 
 def pytest_collection_modifyitems(items):
+    """ Changes what tests are executed """
     nick = []
     for item in items[:]:
         # itemz = inspect.getsource(item)
