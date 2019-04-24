@@ -36,8 +36,6 @@ def test_read_file_populates_data_1():
     assert word_list is not None
     assert len(word_list) == 11
 
-"This is the example test file"
-
 
 def test_hello():
     "method that creates the string to be tested on"
@@ -49,8 +47,3 @@ def test_hello():
 def tester_test():
     "This is the tester"
     return 10
-
-
-# pylint: disable=pointless-statement
-# pylint: disable=undefined-variable
-#x + 10
