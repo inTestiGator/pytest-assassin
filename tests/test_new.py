@@ -13,7 +13,7 @@ def test_self():
 
 
 def test_words():
-    """This asserts words"""
+    """ Asserts that words is equal to the correct length """
     manage = compute_tf_objectoriented.DataStorageManager("stopwords/stop_words.txt")
     words = manage.info()
     assert words is not None
@@ -41,8 +41,8 @@ def test_read_file_populates_data_1():
 "This is the example test file"
 
 
-def test_nick_sucks():
-    "this method creates the string to test"
+def test_hello():
+    "method that creates the string to be tested on"
     # pylint: disable=redefined-builtin
     str = "Hello"
     assert str
@@ -55,5 +55,4 @@ def tester_test():
 
 # pylint: disable=pointless-statement
 # pylint: disable=undefined-variable
-x + 10
-
+#x + 10

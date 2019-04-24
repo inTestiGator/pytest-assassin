@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: pytest-assassin
+Version: 0.1.0
+Summary: A pytest plugin to let users know if tests contain asserts
+Home-page: url here
+Author: Pytest-Assassin Team
+Author-email: email here
+License: Pytest-Assasin Copyright 
+Description: UNKNOWN
+Platform: UNKNOWN
