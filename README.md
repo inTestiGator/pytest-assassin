@@ -69,7 +69,7 @@
   you are only requires to run:
 
   ```
-  python3 install setup.py
+  python3 setup.py install
   ```
 
   and
