@@ -65,9 +65,41 @@
 
 ## Usage
 
-  Include the commands needed to run the plugin
+  For further use on the same project, as long as you are in the shell
+  you are only requires to run:
+
+  ```
+  python3 install setup.py
+  ```
+
+  and
+
+  ```
+  pytest --assassin
+  ```
+
 
 ## Example Output
 
-  It may serve useful to have a picture of what the output should look like,
-  so users know if they are running the plugin correctly.
+  ```
+Pass
+Pass
+Pass
+Pass
+Pass
+Pass
+Pass
+Pass
+Pass
+Pass
+Fail
+rootdir: /Users/mcorletti/Desktop/Software Engineering/pytest-assassin
+plugins: xdist-1.27.0, sugar-0.9.2, forked-1.0.2, cov-2.6.1, assassin-0.1.0
+collecting ... Fail
+tester_test
+
+ tests/test_new.py ✓✓✓✓✓✓                                        100% ██████████
+
+Results (0.08s):
+       6 passed
+```
