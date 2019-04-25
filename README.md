@@ -13,14 +13,12 @@
 ## Features
 
   Welcome to Pytest-Assassin! Here at Pytest-Assassin, we want to destroy the
-  code that is wrong for your program. Our key features are checking for asserts
-  and function calls within your test cases. While this seems like something
-  to pass up, we can assure you that this is exactly what you want. We are
-  sure that mostly everyone has written a test case that either assert nothing
-  or makes sure that a container, if you will, is filled. While the latter
-  is not bad, it is not what a program needs! A program needs test cases that will
-  run through the function, take the expected output and compare it to the actual
-  output. So in other words, a program needs Pytest Assassin! 
+  test cases that is wrong for your program. Our key features are checking for asserts
+  within your test cases. We are confident that mostly everyone has written a test
+  case that either assert nothing or makes sure that a container, if you will, is
+  filled. While the latter is not bad, it is not what a program needs! A program
+  needs test cases that will run through the function, take the expected output
+  and compare it to the actual output. So in other words, a program needs Pytest Assassin!
 
 ## Requirements
 
@@ -29,7 +27,41 @@
 
 ## Installation
 
-  Include how to install the plugin in this section
+  Installation for Pytest Assassin, as of now, requires the cloning of its repository.
+  This requires command-line interface, using the line:
+
+  ```
+  git clone git@github.com:inTestiGator/pytest-assassin.git
+  ```
+
+  Once completing that step, one must copy their test suite in the test folder.
+  Once that step is done, the next part is running Pytest Assassin! First, one
+  must install the depenedencies of pipenv by running the command:
+
+  ```
+  pipenv install --develop
+  ```
+
+  To follow that, it is important and a must to create a shell within your terminal
+  window in order to run Pytest Assassin. Therefore, run this command in your terminal
+  to open a shell:
+  ```
+  pipenv shell
+  ```
+
+  Next, it is needed to run the setup of Pytest Assassin, so it builds and is
+  ready with the needed code. This requires you to type:
+
+  ```
+  python3 install setup.py
+  ```
+
+  Now, what we all have been waiting for, you run Pytest Assassin!!!
+
+  ```
+  pytest --assassin
+  ```
+
 
 ## Usage
 
