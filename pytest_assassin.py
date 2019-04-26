@@ -23,11 +23,11 @@ def pytest_report_teststatus(report):
     if report.failed and pytest.config.getoption("assassin"):
         print (report.outcome, "O", "OPPORTUNITY for improvement")
     else:
-        print ("Thanks Running Tests")
+        print ("Thanks For Running Tests")
 
 
 def execution():
-	""" undocumented """
+	""" Tests for assertions """
     testerFile = open("tests/test_new.py", "r")
     nodes = [
         item
