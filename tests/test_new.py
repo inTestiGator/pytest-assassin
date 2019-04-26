@@ -21,7 +21,7 @@ def test_words():
 
 
 def test_stop_words():
-    """ Tests the word frequency manager"""
+    """ Tests the word frequency manager """
     stop_manage = compute_tf_objectoriented.WordFrequencyManager()
 
     assert stop_manage is not None
