@@ -1,0 +1,5 @@
+[run]
+# omit the tests for test coverage monitoring
+omit=pytest_assassin/tests
+# all of the modules in pytest_assassin
+include=pytest_assassin/pytest_assassin.py

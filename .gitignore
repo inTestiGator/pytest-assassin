@@ -1,0 +1,16 @@
+# Ignore these files
+
+# Ignore folder named `build`
+build/
+
+# Ignore folder named `dist`
+dist/
+
+# Ignore folder named `pytest_assasin.egg-info`
+pytest_assassin.egg-info/
+
+# Ignore folder named `.pytest_cache`
+.pytest_cache
+
+# Ignore folder named `__pycache__`
+__pycache__/

@@ -1,6 +1,7 @@
+"This class allows the pytest to run in the terminal"
+
 import os
 import sys
-import pytest
 import ast
 import inspect
 
@@ -8,7 +9,7 @@ import inspect
 def pytest_addoption(parser):
     """ Turns features on with "--assassin" option"""
     group = parser.getgroup("assassin")
-    group.addoption("--assassin", action = "store_true")
+    group.addoption("--assassin", action="store_true")
 
 
 def pytest_report_header():

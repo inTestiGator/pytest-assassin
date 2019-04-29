@@ -69,7 +69,7 @@
   ```
 
 
-## Usage
+## Commands
 
   For further use on the same project, as long as you are in the shell
   you are only requires to run:
