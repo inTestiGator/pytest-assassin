@@ -66,7 +66,7 @@ def pytest_collection_modifyitems(items):
                     pass
                 elif isinstance(i, ast.Expr):
                     pass
-                else isinstance(i, ast.Assert):
+                elif isinstance(i, ast.Assert):
                     var = True
                     break
             if var is False:
