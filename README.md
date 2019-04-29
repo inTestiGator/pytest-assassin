@@ -39,7 +39,7 @@
   must install the depenedencies of pipenv by running the command:
 
   ```
-  pipenv install --develop
+  pipenv install --dev
   ```
 
   To follow that, it is important and a must to create a shell within your terminal
