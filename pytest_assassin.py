@@ -1,12 +1,8 @@
 "This class allows the pytest to run in the terminal"
 
-import os
-import sys
 import ast
+import inspect
 import pytest
-
-assert os  # silence pyflakes
-assert sys  # silence pyflakes
 
 
 def pytest_addoption(parser):
@@ -16,23 +12,26 @@ def pytest_addoption(parser):
 
 
 def pytest_report_header():
-    """ Thank tester for running tests """
+    """ Executuion is run if assassin is presented in terminal """
     # pylint: disable=no-member
     if pytest.config.getoption("assassin"):
         execution()
 
 
-def pytest_report_teststatus(report):
-    """ Turn failures into opportunities """
-    # pylint: disable=no-member
-    if report.failed and pytest.config.getoption("assassin"):
-        print(report.outcome, "O", "OPPORTUNITY for improvement")
-    else:
-        print("Thanks Running Tests")
+# def walk():
+#     directory = os.listdir("./")
+#     for object in directory:
+#         if object == "tests":
+#             walk = os.walk("tests")
+#             print("hi")
+#         elif object == "testing":
+#             os.walk("testing")
+#         else:
+#             print("Not a test folder")
 
 
 def execution():
-    """ undocumented """
+    """ Checks for the instance of an assert and prints pass or fail """
     testerFile = open("tests/test_new.py", "r")
     nodes = [
         item
@@ -43,8 +42,36 @@ def execution():
         items = [item for item in ast.parse(node).body]
         for item in items:
             if isinstance(item, ast.Assign):
-                print("Ignore")
+                pass
+            elif isinstance(item, ast.Expr):
+                pass
             elif isinstance(item, ast.Assert):
                 print("Pass")
             else:
                 print("Fail")
+
+
+def pytest_collection_modifyitems(items):
+    """ Changes what tests are executed by removing those without an assert """
+    nick = []
+    for item in items[:]:
+        # itemz = inspect.getsource(item)
+        # print(inspect.isfunction(item))
+        funcItem = item.function
+        itemz = inspect.getsource(funcItem)
+        chicken = [item for item in ast.parse(itemz).body]
+        for itemt in chicken:
+            var = False
+            item1 = ast.parse(itemt).body
+            for i in item1:
+                if isinstance(i, ast.Assign):
+                    pass
+                elif isinstance(i, ast.Expr):
+                    pass
+                elif isinstance(i, ast.Assert):
+                    var = True
+                    break
+            if var is False:
+                print(itemt.name)
+                nick.append(itemt.name)
+                items.remove(item)
