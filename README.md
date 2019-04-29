@@ -34,9 +34,8 @@
   git clone git@github.com:inTestiGator/pytest-assassin.git
   ```
 
-  Once completing that step, one must copy their test suite in the test folder.
-  Once that step is done, the next part is running Pytest Assassin! First, one
-  must install the depenedencies of pipenv by running the command:
+  Once completing that step, the next part is running Pytest Assassin! First, you
+  must install the dependencies of pipenv by running the command:
 
   ```
   pipenv install --dev
