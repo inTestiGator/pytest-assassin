@@ -25,6 +25,9 @@
   In order to run Pytest Assassin, the user will need the Python version 3.6.7.
   The user will need the Pipenv version 2018.11.26.
 
+  If the user does not have the correct version of Pipenv, follow the link below.
+  [![Pyenv Version Directions](https://pypi.org/project/pipenv/)
+
 ## Installation
 
   Installation for Pytest Assassin, as of now, requires the cloning of its repository.
