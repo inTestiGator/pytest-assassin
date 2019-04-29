@@ -1,5 +1,6 @@
 "This class allows the pytest to run in the terminal"
 
+import pytest
 import ast
 import inspect
 
