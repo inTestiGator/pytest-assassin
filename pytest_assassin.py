@@ -29,6 +29,7 @@ def pytest_report_header():
 #         else:
 #             print("Not a test folder")
 
+
 def execution():
     """ Checks for the instance of an assert and prints pass or fail """
     testerFile = open("tests/test_new.py", "r")
