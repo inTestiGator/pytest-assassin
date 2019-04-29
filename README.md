@@ -28,6 +28,10 @@
   If the user does not have the correct version of Pipenv, follow the link below.
   [![Pyenv Version Directions](https://pypi.org/project/pipenv/)
 
+  If the user does not have the correct version of Pytest, follow the link below.
+  [![Python Version Directions](http://ubuntuhandbook.org/index.php/2017/07/install-python-3-6-1-in-ubuntu-16-04-lts/)
+
+
 ## Installation
 
   Installation for Pytest Assassin, as of now, requires the cloning of its repository.
