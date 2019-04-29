@@ -12,7 +12,7 @@ def pytest_addoption(parser):
 
 
 def pytest_report_header():
-    """ Thank tester for running tests """
+    """ Executuion is run if assassin is presented in terminal """
     # pylint: disable=no-member
     if pytest.config.getoption("assassin"):
         execution()
