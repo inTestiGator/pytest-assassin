@@ -22,8 +22,7 @@
 
 ## Requirements
 
-  Include what prerequisites the user will need such as the versions of pytest
-  and python
+  In order to run Pytest Assassin, you will need the Python version 3.6.7.
 
 ## Installation
 
