@@ -53,7 +53,7 @@
   ready with the needed code. This requires you to type:
 
   ```
-  python3 install setup.py
+  python3 setup.py install
   ```
 
   Now, what we all have been waiting for, you run Pytest Assassin!!!
