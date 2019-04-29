@@ -51,7 +51,7 @@
   To follow that, it is important and a must to create a shell within your terminal
   window in order to run Pytest Assassin. Therefore, run this command in your terminal
   to open a shell:
-  
+
   ```
   pipenv shell
   ```
