@@ -1,5 +1,6 @@
 """This the Pytest Assassin test suite"""
 
+
 def test_read_file_populates_data_0():
     """ Checks that the reading of the small text file works """
     storage_manager = "hello"

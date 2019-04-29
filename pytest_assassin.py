@@ -1,7 +1,5 @@
 "This class allows the pytest to run in the terminal"
 
-import os
-import sys
 import ast
 import inspect
 
@@ -50,6 +48,7 @@ def execution():
             else:
                 print("Fail")
 
+
 def pytest_collection_modifyitems(items):
     """ Changes what tests are executed by removing those without an assert """
     nick = []
@@ -67,13 +66,10 @@ def pytest_collection_modifyitems(items):
                     pass
                 elif isinstance(i, ast.Expr):
                     pass
-                elif isinstance(i, ast.Assert):
+                else isinstance(i, ast.Assert):
                     var = True
                     break
-                    print("Pass")
-                else:
-                    print("Fail")
-            if var == False:
+            if var is False:
                 print(itemt.name)
                 nick.append(itemt.name)
                 items.remove(item)
