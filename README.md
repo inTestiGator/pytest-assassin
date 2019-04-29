@@ -18,7 +18,8 @@
   case that either assert nothing or makes sure that a container, if you will, is
   filled. While the latter is not bad, it is not what a program needs! A program
   needs test cases that will run through the function, take the expected output
-  and compare it to the actual output. So in other words, a program needs Pytest Assassin!
+  and compare it to the actual output. So in other words, a program needs Pytest
+  Assassin!
 
 ## Requirements
 
@@ -30,7 +31,6 @@
 
   If the user does not have the correct version of Pytest, follow the link below.
   [![Python Version Directions](http://ubuntuhandbook.org/index.php/2017/07/install-python-3-6-1-in-ubuntu-16-04-lts/)
-
 
 ## Installation
 
@@ -51,6 +51,7 @@
   To follow that, it is important and a must to create a shell within your terminal
   window in order to run Pytest Assassin. Therefore, run this command in your terminal
   to open a shell:
+  
   ```
   pipenv shell
   ```
@@ -68,7 +69,6 @@
   pytest --assassin
   ```
 
-
 ## Commands
 
   For further use on the same project, as long as you are in the shell
@@ -83,7 +83,6 @@
   ```
   pytest --assassin
   ```
-
 
 ## Example Output
 
